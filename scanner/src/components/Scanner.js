@@ -30,7 +30,7 @@ const Scanner = () => {
 
     setErrorMessage(''); // Clear any previous error messages
 
-    const baseUrl = 'http://localhost:3002/display';
+    const baseUrl = 'https://qrscannertask.onrender.com/display';
     const params = new URLSearchParams({
       name: name,
       mobile: mobileNumber,
