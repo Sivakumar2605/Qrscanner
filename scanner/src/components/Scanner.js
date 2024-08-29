@@ -45,7 +45,7 @@ const Scanner = () => {
       const ipResponse = await axios.get('https://api.ipify.org?format=json');
       const ipAddress = ipResponse.data.ip;
 
-      await axios.post('http://localhost:5000/api/scanned-user', {
+      await axios.post('https://qrscanner-1.onrender.com/api/scanned-user', {
         name: name,
         mobile: mobileNumber,
         address: address,
